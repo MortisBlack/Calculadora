@@ -55,8 +55,8 @@
         android:id="@+id/button_erase"
         android:layout_width="72dp"
         android:layout_height="103dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="@android:color/holo_red_light"
         android:fontFamily="@font/coda"
         android:text="C"
@@ -131,6 +131,57 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/button3"
+        android:layout_width="74dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/grey_01"
+        android:fontFamily="@font/coda"
+        android:onClick="presionarDigito"
+        android:text="3"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_multiply"
+        app:layout_constraintEnd_toStartOf="@+id/button_multiply"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button_multiply"
+        android:layout_width="74dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:fontFamily="@font/coda"
+        android:onClick="clicOperacion"
+        android:text="X"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/button_less"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button_less"
+        app:layout_constraintTop_toBottomOf="@+id/button_less" />
+
+    <Button
+        android:id="@+id/button_divide"
+        android:layout_width="74dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:fontFamily="@font/coda"
+        android:onClick="clicOperacion"
+        android:text="/"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/button_multiply"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button_multiply"
+        app:layout_constraintTop_toBottomOf="@+id/button_multiply" />
+
+    <Button
         android:id="@+id/button0"
         android:layout_width="74dp"
         android:layout_height="69dp"
@@ -176,58 +227,6 @@
         app:layout_constraintEnd_toStartOf="@+id/button_divide"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button_point" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="74dp"
-        android:layout_height="69dp"
-        android:backgroundTint="@color/grey_01"
-        android:fontFamily="@font/coda"
-        android:onClick="presionarDigito"
-        android:text="3"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_multiply"
-        app:layout_constraintEnd_toStartOf="@+id/button_multiply"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button_multiply"
-        android:layout_width="74dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="@android:color/holo_orange_light"
-        android:fontFamily="@font/coda"
-        android:onClick="clicOperacion"
-        android:text="X"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="@+id/button_less"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button_less"
-        app:layout_constraintTop_toBottomOf="@+id/button_less" />
-
-    <Button
-        android:id="@+id/button_divide"
-        android:layout_width="74dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="@android:color/holo_orange_light"
-        android:fontFamily="@font/coda"
-        android:onClick="clicOperacion"
-        android:text="/"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="@+id/button_multiply"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_equals"
-        app:layout_constraintStart_toStartOf="@+id/button_multiply"
-        app:layout_constraintTop_toBottomOf="@+id/button_multiply" />
 
     <Button
         android:id="@+id/button6"

@@ -85,6 +85,7 @@ class MainActivity : AppCompatActivity() {
             tv_num1.setText("")
         }
     }
+
     fun presionarDigito(view: View){
 
         huboError(view)
